@@ -1,3 +1,4 @@
+import sys
 import random
 from collections import Counter
 from tqdm import tqdm
@@ -32,28 +33,31 @@ def get_args():
         )
         parser.add_argument(
             "Fasta_path",
-            acction = "store",
+            type=str,
+            #acction = "store",
             help = "File of original sequence files",
         )
         parser.add_argument(
             "Embedding_path",
-            action="store",
+            type=str,
+            #action="store",
             help = "File of embedding sequence files",
         )
         parser.add_argument(
             "Values",
-            action="store",
-            help = "File of values should do regression"
+            type=str,
+            #action="store",
+            help = "File of values should do regression",
         )
-        if len(sys.argv) == 1:
-            parser.print_help(sys.stderr)
-            exit(1)
+        #if len(sys.argv) == 1:
+        #    parser.print_help(sys.stderr)
+        #    exit(1)
     except:
         sys.stderr.write("An exception occurred with argument parsing. Check your provided options. \n")
 
     return parser.parse_args()
 
-def data_loader(fasta_path:str, embd_path:str, value_path:str):
+def data_loader(fasta_path:str, embd_path:str, value_path:str, EMB_LAYER=33):
     ys, xs = [], []
     for header, _seq in esm.data.read_fasta(fasta_path):
         fn = f'{embd_path}/{header[1:]}.pt'
@@ -180,5 +184,5 @@ def main():
         print(f'{scipy.stats.spearmanr(ys_test, preds)}')
         print('\n', '-' * 80, '\n')
 
-
-
+if __name__ == "__main__":
+    main()
