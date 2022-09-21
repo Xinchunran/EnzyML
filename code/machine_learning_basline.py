@@ -131,6 +131,7 @@ rfr_grid = [
 xgb_grid = [
     {
             'model': [XGBRegressor()],
+            'model__tree_method': ['gpu_hist']
             'model__n_estimators' : [100],
             'model__criterion': ['squared_error', 'absolute_error'],
             'model__max_depth': [20], 
