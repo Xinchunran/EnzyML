@@ -1,0 +1,132 @@
+analyzing the pca
+<class 'sklearn.neighbors._regression.KNeighborsRegressor'>
+Fitting 5 folds for each of 48 candidates, totalling 240 fits
+<class 'sklearn.svm._classes.SVR'>
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+<class 'sklearn.ensemble._forest.RandomForestRegressor'>
+Fitting 5 folds for each of 16 candidates, totalling 80 fits
+<class 'xgboost.sklearn.XGBRegressor'>
+Fitting 5 folds for each of 2 candidates, totalling 10 fits
+[23:28:51] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+KNeighborsRegressor(algorithm='ball_tree', p=1, weights='distance')
+
+SpearmanrResult(correlation=0.5155944469571384, pvalue=0.00034120714615871794)
+
+ -------------------------------------------------------------------------------- 
+
+SVR(C=10.0, kernel='linear')
+
+SpearmanrResult(correlation=0.5547991213044753, pvalue=9.299285853908337e-05)
+
+ -------------------------------------------------------------------------------- 
+
+RandomForestRegressor(criterion='absolute_error', max_features='sqrt',
+                      min_samples_leaf=4, min_samples_split=10,
+                      n_estimators=20)
+
+SpearmanrResult(correlation=0.42877905096997265, pvalue=0.0036838575797890644)
+
+ -------------------------------------------------------------------------------- 
+
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+             colsample_bynode=1, colsample_bytree=0.8,
+             criterion='absolute_error', enable_categorical=False, eta=0.1,
+             gamma=0, gpu_id=-1, importance_type=None,
+             interaction_constraints='', learning_rate=0.100000001,
+             max_delta_step=0, max_depth=20, min_child_weight=1, missing=nan,
+             monotone_constraints='()', n_estimators=100, n_jobs=2,
+             num_parallel_tree=1, predictor='auto', random_state=0, reg_alpha=0,
+             reg_lambda=1, scale_pos_weight=1, subsample=0.7,
+             tree_method='exact', validate_parameters=1, verbosity=None)
+
+SpearmanrResult(correlation=0.35637402176993604, pvalue=0.017577131156420626)
+
+ -------------------------------------------------------------------------------- 
+
+[23:28:45] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:46] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:47] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:48] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:49] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:45] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:46] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:47] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:48] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
+[23:28:50] WARNING: /tmp/abs_40obctay9q/croots/recipe/xgboost-split_1659548945886/work/src/learner.cc:576: 
+Parameters: { "criterion" } might not be used.
+
+  This could be a false alarm, with some parameters getting used by language bindings but
+  then being mistakenly passed down to XGBoost core, or some parameter actually being used
+  but getting flagged wrongly here. Please open an issue if you find any such cases.
+
+
