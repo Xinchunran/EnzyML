@@ -1,21 +1,17 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from preprocessing import DataPreprocessor
 from models import XGBoostRegressor, KNNRegressor, SVMRegressor
 from metrics import evaluate
 
 
 if __name__ == '__main__':
+    file = input('Enter file name: ')
 
-    # Input file and load data
-    file = input('Enter data file name: ')
+    # Load data
     df = pd.read_csv(file)
 
     # Preprocess data
-    X, y = DataPreprocessor.preprocess_data(df)
-
-    # Split data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = DataPreprocessor.splits(df)
 
     # XGBoost Model
     xgb_model = XGBoostRegressor(hyperparams=None)

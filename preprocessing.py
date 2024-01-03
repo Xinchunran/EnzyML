@@ -1,11 +1,11 @@
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
+from sklearn.model_selection import train_test_split
+
+
 
 class DataPreprocessor:
-    def __init__(self):
-        pass
-
-    def preprocess_data(df):
+   def splits(df):
         # SMILES strings
         smiles_encoder = OneHotEncoder(sparse_output=False)
         smiles_encoded = smiles_encoder.fit_transform(df['smiles'].values.reshape(-1, 1))
@@ -23,5 +23,10 @@ class DataPreprocessor:
         # Get target (Kcat)
         y = df['kcat'].values
 
-        return X, y
+        # Get train and test sets
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+        return  X_train, X_test, y_train, y_test
+   
+       
 
